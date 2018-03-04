@@ -99,16 +99,29 @@ h1.logo img{
 .concept ul li {
   display: block;
   float:left;
+
 }
+.concept ul li img{
+  display: block;
+  width:1000px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease, visibility 0s ease 1s;
+}
+
+.concept ul li img.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+
 .concept ul li:nth-child(1) img,
 .concept ul li:nth-child(2) img{
   width:1000px;
   height: 657px;
 }
-.concept ul li img{
-  display: block;
-  width:1000px;
-}
+
 
 .concept h2{
   padding-top:40px;
@@ -118,6 +131,8 @@ h1.logo img{
   font-size: 45px;
   font-weight: bold;
 }
+
+
 
 /* top button */
 .top{
