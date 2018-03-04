@@ -4,6 +4,7 @@
 /* logo */
 body{
   font-family: "Noto Sans CJK KR DemiLight DemiLight";
+    position:relative;
 }
 
 header{
@@ -48,38 +49,51 @@ h1.logo img{
       width: 600px;
       margin-top:100px;
 }
+.brnad hr{
+  margin-top:70px;
+  margin-bottom:70px;
+  background: #666;
+  height:5px;
+  border:none;
+  border-radius:50px;
+  /* transform: rotate(40deg); */
+}
 .brnad_text p{
   display: block;
   margin-top:50px;
   margin-bottom:50px;
   padding-bottom:110px;
   text-align: center;
+  font-size:19px;
   line-height: 30px;
   border-bottom: 1px solid #6666662e;
 }
 
 /* candle */
 .candle h2{
-  padding-bottom:40px;
+  padding-bottom:60px;
   text-align: center;
   color:#666;
   font-size: 45px;
   font-weight: bold;
 }
 .candle>img{
+      box-shadow: 0px -6px 125px -60px #666;
   margin:auto;
   display: block;
   width:1000px;
 }
 /* tea */
 .tea h2{
-  padding-top:40px;
-  text-align: center;
-  color:#666;
-  font-size: 45px;
-  font-weight: bold;
+  padding-top: 60px;
+      padding-bottom: 60px;
+      text-align: center;
+      color: #666;
+      font-size: 45px;
+      font-weight: bold;
 }
 .tea>img{
+      box-shadow: 0px -6px 125px -60px #666;
   margin:auto;
   display: block;
   width:1000px;
@@ -89,38 +103,45 @@ h1.logo img{
 
 .concept{
   margin:auto;
-  overflow: hidden;
-  width:1000px;
+  width:100%;
+  /* overflow: hidden; */
 }
 .concept ul {
+  position: relative;
+
+  width:100%;
+  height:700px;
   display: block;
-  width:4500px;
+
 }
 .concept ul li {
+  position: absolute;
+  width:100%;
+  height:auto;
   display: block;
-  float:left;
-
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease, visibility 0s ease 1s;
 }
-.concept ul li img{
-  display: block;
-  width:1000px;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s ease, visibility 0s ease 1s;
-}
-
-.concept ul li img.active {
+.concept ul li:first-child{
   visibility: visible;
   opacity: 1;
   transition: opacity 1s ease;
 }
 
+.concept ul li img{
+  margin:auto;
+  display: block;
+  width:1100px;
 
-.concept ul li:nth-child(1) img,
-.concept ul li:nth-child(2) img{
-  width:1000px;
-  height: 657px;
 }
+
+.concept ul li.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
 
 
 .concept h2{
@@ -136,15 +157,16 @@ h1.logo img{
 
 /* top button */
 .top{
-  position: fixed;
+position: fixed;
   bottom:25px;
-  right:100px;
-  width:100%;
-  height:auto;
+  right:50px;
+  width:50px;
+  height:50px;
+  cursor: pointer;
 }
 
 .top span{
-  position: absolute;
+
   width:50px;
   height:50px;
 
