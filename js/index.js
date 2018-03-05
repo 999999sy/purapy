@@ -19,5 +19,5 @@ var active_slide = 0,
             active_slide=1;
               dom_slides.removeClass('active').eq(active_slide).addClass('active');
           }
-        },3000)
+        },1700)
 })
