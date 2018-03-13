@@ -174,3 +174,89 @@ position: fixed;
   background: url(../img/ico/top.png) no-repeat;
   background-size: cover;
 }
+
+/* 반응형 */
+@media screen and (max-width:640px) {
+
+/* header */
+header{
+  width:100%;
+}
+.all_goods>img{
+  width:400px;
+}
+h1.logo img{
+  width:140px;
+}
+
+/* brand */
+section.brnad{
+  width:100%;
+}
+.brnad>img {
+  width:360px;
+}
+
+.brnad hr{
+  width:30px;
+  height: 2px;
+  margin-top: 50px;
+margin-bottom: 50px;
+}
+.brnad_text p{
+  font-size: 10px;
+  line-height: 20px;
+  padding-bottom: 67px;
+}
+
+/* candle */
+section.candle{
+  width:100%;
+}
+
+.candle h2{
+padding-bottom: 40px;
+  font-size: 35px;
+}
+.candle>img{
+  width:400px;
+}
+
+/* tea */
+section.tea{
+  width:100%;
+}
+
+.tea h2{
+  padding-top: 40px;
+padding-bottom: 40px;
+  font-size: 35px;
+}
+.tea>img{
+  width:400px;
+}
+
+
+/* concept */
+section.concept{
+  width:100%;
+}
+.concept h2{
+  padding-top: 40px;
+padding-bottom: 40px;
+  font-size: 35px;
+}
+.concept ul{
+  height: 250px;
+}
+.concept ul li img{
+  width:400px;
+}
+
+/* top 이동 */
+.top{
+  right:0;
+}
+
+
+}
